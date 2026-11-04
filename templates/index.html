@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Video Clipper Online</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<main class="container">
+    <nav>
+        <a class="brand" href="/">VIDEO<span>CLIPPER</span></a>
+        <small>GRATIS • ONLINE</small>
+    </nav>
+
+    <section class="hero">
+        <p class="eyebrow">YOUTUBE VIDEO TOOL</p>
+        <h1>Potong video.<br><span>Ambil momen terbaik.</span></h1>
+        <p class="description">
+            Unduh video YouTube berdasarkan timestamp awal dan akhir.
+            Praktis, cepat, dan langsung dalam format MP4.
+        </p>
+    </section>
+
+    <section class="panel">
+        <form id="clipForm">
+            <label>URL Video YouTube</label>
+            <div class="url-row">
+                <input id="url" type="url"
+                    placeholder="Tempel URL YouTube di sini" required>
+                <button type="button" id="pasteBtn">Tempel</button>
+            </div>
+
+            <div class="timestamps">
+                <div>
+                    <label>Timestamp Awal</label>
+                    <input id="start" value="00:00" required>
+                </div>
+                <div>
+                    <label>Timestamp Akhir</label>
+                    <input id="end" value="00:30" required>
+                </div>
+            </div>
+
+            <label>Kualitas Video</label>
+            <select id="quality">
+                <option value="480">480p</option>
+                <option value="720" selected>720p</option>
+                <option value="1080">1080p</option>
+            </select>
+
+            <button class="primary" id="submitBtn" type="submit">
+                Buat Potongan Video →
+            </button>
+        </form>
+
+        <div id="status" class="status"></div>
+
+        <p class="note">
+            Gunakan hanya video yang kamu miliki atau yang telah
+            mendapatkan izin untuk diunduh.
+        </p>
+    </section>
+
+    <footer>VIDEO CLIPPER ONLINE — POTONG MOMEN, BUAT KONTEN.</footer>
+</main>
+<script src="/static/script.js"></script>
+</body>
+</html>
