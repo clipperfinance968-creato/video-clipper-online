@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+cookies.txt
+*.cookies
+.venv/
+downloads/*
+!downloads/.gitkeep
